@@ -28,6 +28,9 @@ devDependencies:
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
     version: 3.7.1(vite@5.4.9)
+  chrome-types:
+    specifier: ^0.1.309
+    version: 0.1.309
   eslint:
     specifier: ^9.11.1
     version: 9.12.0
@@ -857,6 +860,10 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chrome-types@0.1.309:
+    resolution: {integrity: sha512-PY4wXN1qmrddFAIwxfD8q8brrXKSOgExB8ZuhNnPkcFIEIG0QSx8Z0392phjdbo+TwFGOzhd5LPKzj/ufmQ/Cg==}
     dev: true
 
   /color-convert@2.0.1:
