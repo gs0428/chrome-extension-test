@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Permission",
+  "description": "This extension demonstrates a 'browser_action' with permissions.",
+  "version": "1.0",
+  "permissions": ["sidePanel"],
+  "side_panel": {
+    "default_path": "dist/index.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "toggle-side-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Run \"foo\" on the current page."
+    }
+  }
+}

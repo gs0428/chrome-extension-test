@@ -3,10 +3,9 @@ import { Link, Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <div className="max-w-96 mx-auto">
-      <header className="flex justify-between mb-5">
+      <header className="flex justify-around mb-5">
         <Link to="/">Home</Link>
         <Link to="/post">Post</Link>
-        <Link to="/search">Search</Link>
       </header>
       <Outlet />
     </div>
