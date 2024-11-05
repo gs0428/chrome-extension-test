@@ -3,7 +3,7 @@
   "name": "Permission",
   "description": "This extension demonstrates a 'browser_action' with permissions.",
   "version": "1.0",
-  "permissions": ["sidePanel", "bookmarks"],
+  "permissions": ["sidePanel", "bookmarks", "history", "tabs"],
   "side_panel": {
     "default_path": "dist/index.html"
   },
