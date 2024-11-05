@@ -1,13 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Permission",
-  "description": "This extension demonstrates a 'browser_action' with permissions.",
+  "name": "Chrome Extension with Side Panel",
+  "description": "A Chrome Extension with Side Panel",
   "version": "1.0",
-  "permissions": ["sidePanel", "bookmarks", "history", "tabs"],
+  "permissions": ["sidePanel", "bookmarks", "history", "tabs", "identity"],
+  "action": {
+    "default_title": "Login with Google"
+  },
   "side_panel": {
     "default_path": "dist/index.html"
   },
   "background": {
     "service_worker": "service-worker.js"
+  },
+  "oauth2": {
+    "client_id": "405483554296-3ggikssq315bp8knfgbm0ru3f2ok02ie.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
   }
 }
