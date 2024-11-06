@@ -3,7 +3,14 @@
   "name": "Chrome Extension with Side Panel",
   "description": "A Chrome Extension with Side Panel",
   "version": "1.0",
-  "permissions": ["sidePanel", "bookmarks", "history", "tabs", "identity"],
+  "permissions": [
+    "sidePanel",
+    "bookmarks",
+    "history",
+    "tabs",
+    "identity",
+    "storage"
+  ],
   "action": {
     "default_title": "Login with Google"
   },
